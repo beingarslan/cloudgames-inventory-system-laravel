@@ -54,4 +54,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getPasswordAttribute()
+    {
+        return $this->attributes['userhash'] ?? null;
+    }
+
+    public function setPasswordAttribute($value)
+    {
+        $this->attributes['userhash'] = $value;
+    }
 }
