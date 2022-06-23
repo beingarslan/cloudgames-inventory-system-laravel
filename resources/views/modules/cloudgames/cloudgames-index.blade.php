@@ -5,7 +5,7 @@
 @section('title', 'Inventory')
 
 @section('content_header')
-<h1>Dashboard</h1>
+<h1>Inventory</h1>
 @stop
 
 @section('content')
