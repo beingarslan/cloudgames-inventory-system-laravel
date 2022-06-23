@@ -25,5 +25,4 @@ class CloudgamesPackage extends Model
     public function cloudgamesInventory(){
         return $this->hasMany(CloudgamesInventory::class, 'id_package', 'id');
     }
-
 }

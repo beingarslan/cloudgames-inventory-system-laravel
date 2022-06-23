@@ -15,7 +15,9 @@ class CloudgamesInventoryController extends Controller
      */
     public function index()
     {
-        //
+        return view('modules.cloudgames.cloudgames-index', [
+            'cloudgamesInventorys' => CloudgamesInventory::all(),
+        ]);
     }
 
     /**

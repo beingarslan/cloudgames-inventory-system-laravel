@@ -247,8 +247,8 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'My Page',
-            'url'         => 'admin/pages',
+            'text'        => 'Inventory',
+            'url'         => '/cloudgames/inventory',
             'icon'        => 'far fa-fw fa-file',
             'label'       => 4,
             'label_color' => 'success',
