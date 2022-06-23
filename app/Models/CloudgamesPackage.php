@@ -22,5 +22,8 @@ class CloudgamesPackage extends Model
         'aspect_ratio',
     ];
 
-    
+    public function cloudgamesInventory(){
+        return $this->hasMany(CloudgamesInventory::class, 'id_package', 'id');
+    }
+
 }

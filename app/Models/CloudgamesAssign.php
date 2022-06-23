@@ -20,4 +20,20 @@ class CloudgamesAssign extends Model
         'id_user',
         'locked',
     ];
+
+    public function cloudgamesInventory(){
+        return $this->belongsTo(CloudgamesInventory::class, 'id_cloudgame', 'id');
+    }
+
+    public function operator(){
+        return $this->belongsTo(User::class, 'id_operator', 'id');
+    }
+
+    public function shop(){
+        return $this->belongsTo(User::class, 'id_shop', 'id');
+    }
+
+    public function player(){
+        return $this->belongsTo(User::class, 'id_user', 'id');
+    }
 }

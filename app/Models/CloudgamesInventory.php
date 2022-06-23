@@ -22,4 +22,12 @@ class CloudgamesInventory extends Model
         'audio_port',
         'input_port',
     ];
+
+    public function cloudgamesAssign(){
+        return $this->hasMany(CloudgamesAssign::class, 'id_cloudgame', 'id');
+    }
+
+    public function cloudgamesPackage(){
+        return $this->belongsTo(CloudgamesPackage::class, 'id_package', 'id');
+    }
 }
